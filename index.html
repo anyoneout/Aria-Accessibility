@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Aria Accessibility</title>
+</head>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: helvetica;
+  }
+
+  
+
+</style>
+
+<body>
+  <div style="width: 600px; margin: auto;">
+    <h1 style="text-align: center;">Aria Accessibility</h1>
+    <br>
+    <h2>Description</h2>
+    <p>ARIA stands for Accessible Rich Internet
+      Applications, and it's a set of attributes that can be
+      added to HTML elements to make them more accessible to
+      people using assistive technologies, such as screen
+      readers. ARIA can provide additional information about
+      an element's functionality and behavior, such as its
+      role, properties, and states. For example, the
+      "aria-label" property can help assistive technologies
+      accurately convey the purpose of a button. ARIA can
+      also enable keyboard interaction and focus management
+      for elements that are not normally interactive or
+      focusable. However, ARIA doesn't change an element's
+      visual appearance or functionality</p>
+    <br>
+
+    <!--The aria-label attribute defines a string value that labels an interactive element.  -->
+    <input type="field" aria-placeholder="username" placeholder="username" aria-label="username field">
+    <br><br>
+    <!-- The aria-placeholder attribute defines a short hint (a word or short phrase) intended to help the user with data entry when a form control has no value. The hint can be a sample value or a brief description of the expected format. -->
+    <input type="field" aria-placeholder="password" placeholder="password" id="pwField" aria-label="password field">
+    <label for="password">Password</label>
+    <br><br>
+    <button aria-label="submit">Submit</button>
+    <br><br>
+    <a href="https://theonion.com" role="button">The Onion</a>
+  </div>
+</body>
+
+</html>
